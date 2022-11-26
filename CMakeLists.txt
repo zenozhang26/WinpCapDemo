@@ -3,8 +3,8 @@ project(WinpCapDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 
-INCLUDE_DIRECTORIES(C:/Users/Elvis/documents/WpdPack/include/)
-LINK_DIRECTORIES(C:/Users/Elvis/documents/WpdPack/Lib/)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/WpdPack/Include/)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/WpdPack/Lib/x64)
 add_definitions(-D HAVE_REMOTE -D WPCAP)
 link_libraries(wpcap.lib ws2_32.lib)
 
